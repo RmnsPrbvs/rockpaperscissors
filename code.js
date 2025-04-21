@@ -16,8 +16,10 @@ let round = (input) => {
 
     if (input == bot_input) {
         console.log(input)
+    } else if ((input == 'rock' && bot_input == 'paper') || (input == 'paper' && bot_input == 'scissors') || (input == 'scissors' && bot_input == 'rock')) {
+        console.log('player loss')
     } else {
-        console.log(bot_input, input)
+        console.log('player won')
     }
 }
 
